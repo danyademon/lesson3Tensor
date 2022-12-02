@@ -2,11 +2,11 @@ import math
 import sys
 from cmath import sqrt as complex_sqrt
 
-a = input("Type a: ")
-b = input("Type b: ")
-c = input("Type c: ")
-
 try:
+    a = input("Type a: ")
+    b = input("Type b: ")
+    c = input("Type c: ")
+
     if 'j' in a:
         a = complex(a)
     else:
