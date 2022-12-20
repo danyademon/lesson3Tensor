@@ -6,7 +6,9 @@ menu_elements = ['Up', 'Right', 'Left', 'Down']
 print(f'We are at start point: X = {user_pointX}, Y = {user_pointY}')
 
 menu_selector = input('Where are we going? (Left,Right,Down,Up): ')
-if menu_selector not in menu_elements:
+if (menu_selector  
+       not in menu_elements):
+    #Если нет такого элемента в меню, то выходим из программы
     print(f'We cant go "{menu_selector}". Only {menu_elements}.')
     sys.exit()
 

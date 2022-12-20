@@ -7,7 +7,9 @@ while True:
     print(f'0.Exit\n1.Up\n2.Down\n3.Left\n4.Right')
     menu_selector = int(input('Type int number:'))
 
-    if menu_selector not in menu_elements:
+    if (menu_selector 
+            not in menu_elements):
+        #Если нет такого элемента в меню, то выходим из программы
         print(f'We cant go "{menu_selector}". Only {menu_elements}. Try again.\n')
         continue
 
